@@ -1,0 +1,66 @@
+<DOCTYPE! html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../lab1/css/stip.css">
+	<script src="../lab1/js/stip.js"></script>
+	<title>STIP</title>
+</head>
+<body>
+
+<nav>
+  <ul class="topmenu">
+    <li><a href="../lab1/frame.html" class="active">Лабораторная№1<span class="fa fa-angle-down"></span></a>
+      <ul class="submenu">
+        <li><a href="">меню второго уровня</a></li>
+        <li><a href="">меню второго уровня<span class="fa fa-angle-down"></span></a> </li>
+        <li><a href="">меню второго уровня</a></li>
+      </ul>
+    </li>
+    <li><a href="lab2.html">Лабораторная№2</a></li>
+    <li><a href="">Лабораторная№3</a></li>
+    <li><a href="">Лабораторная№4</a></li>
+    <li><a href="">Лабораторная№5</a></li>
+    <li><a href="">Лабораторная№6</a></li>
+  </ul>
+</nav>
+	<div class="content">
+       <h3>	Задание : Используя фреймовую структуру создать многостраничный web-сайт 
+для отчетов о выполнении лабораторных работ. 
+Залить полученные документы на локальный сервер. </h3>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'HTML')" id="defaultOpen">HTML</button>
+  <button class="tablinks" onclick="openCity(event, 'CSS')">CSS</button>
+  <button class="tablinks" onclick="openCity(event, 'JS')">JS</button>
+</div>
+
+<div id="HTML" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">×</span>
+  <h3>HTML</h3>
+  <p><img src="../lab1/img/1.jpg">
+  		<img src="../lab1/img/2.jpg">
+  		<img src="../lab1/img/3.jpg">
+  		<img src="../lab1/img/4.jpg"></p>
+</div>
+
+<div id="CSS" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">×</span>
+  <h3>CSS</h3>
+  <p><img src="../lab1/img/5.jpg"></p> 
+</div>
+
+<div id="JS" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">×</span>
+  <h3>JS</h3>
+  <p><img src="../lab1/img/6.jpg"></p>
+</div>
+	</div>
+
+
+
+</body>
+</html>
+
+
+
+        	 

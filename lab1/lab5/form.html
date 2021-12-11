@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../lab5/css/style.css">
+</head>
+<body>
+    <nav>
+        <ul class="topmenu">
+          <li><a href="../lab1/frame.html" class="active">Лабораторная№1<span class="fa fa-angle-down"></span></a>
+            <ul class="submenu">
+              <li><a href="">меню второго уровня</a></li>
+              <li><a href="">меню второго уровня<span class="fa fa-angle-down"></span></a></li>
+              <li><a href="">меню второго уровня</a></li>
+            </ul>
+          </li>
+          <li><a href="../lab2/lab2.html">Лабораторная№2</a></li>
+          <li><a href="../lab3/lab3.html">Лабораторная№3</a></li>
+          <li><a href="../lab4/lab4.html">Лабораторная№4</a></li>
+          <li><a href="" class="active">Лабораторная№5<span class="fa fa-angle-down"></span></a>
+          <ul class="submenu">
+            <li><a href="../lab5/anim.html">Анимация<span class="fa fa-angle-down"></span></a></li>
+            <li><a href="../lab5/form.html">Форма</a></li>
+            <li><a href="../lab5/lab5.html">Диалоговое окно</a></li>
+          </ul>
+          <li><a href="">Лабораторная№6</a></li>
+        </ul>
+      </nav>
+    <form>
+    <label>Введите пароль:</label>
+    <input type="password">
+    
+    <br>
+
+    <input type="checkbox" onclick="var input = document.getElementById('name2'); if(this.checked){ input.disabled = false; input.focus();}else{input.disabled=true;}" />Я хочу указать контрольное слово
+    <br><label>Введите контрольное слово:</label>
+    <input id="name2" name="name2" disabled="disabled"/> 
+    
+    </form>
+
+
+   
+
+      
+
+
+
+        
+
+
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="../lab4/css/style.css">
+	<script src="../lab4/js/java.js"></script>
+	<title></title>
+</head>
+<body>
+	<nav>
+  <ul class="topmenu">
+    <li><a href="../lab1/frame.html" class="active">Лабораторная№1<span class="fa fa-angle-down"></span></a>
+      <ul class="submenu">
+        <li><a href="">меню второго уровня</a></li>
+        <li><a href="">меню второго уровня<span class="fa fa-angle-down"></span></a> </li>
+        <li><a href="">меню второго уровня</a></li>
+      </ul>
+    </li>
+    <li><a href="../lab2/lab2.html">Лабораторная№2</a></li>
+    <li><a href="../lab3/lab3.html">Лабораторная№3</a></li>
+    <li><a href="lab4.html">Лабораторная№4</a></li>
+    <li><a href="">Лабораторная№5</a></li>
+    <li><a href="">Лабораторная№6</a></li>
+  </ul>
+</nav>
+
+<div class="some-form">
+    <form action="" method="" class="form js-form-validate" onSubmit = "CheckData(); return false;">
+      <div class="some-form__header title">Проверка значений, введенных пользователем в поля формы для регистрации</div>
+  
+      <div class="some-form__line">
+        <input type="text" name="name" placeholder="Ваше имя *" data-validate pattern="^[a-zA-Z]+$" required>
+        <span class="some-form__hint">Обязательно для заполнения</span>
+      </div>
+      <div class="some-form__line">
+        <input type="text" name="name" placeholder="Ваша фамилия *" data-validate  pattern="^[a-zA-Z]+$" required>
+        <span class="some-form__hint">Обязательно для заполнения</span>
+      </div>
+      <div class="some-form__line">
+        <input type="text" placeholder="Введите наименование организации"  pattern="^[a-zA-Z]+$" required>
+      </div>
+      <div class="some-form__line">
+        <input type="number" placeholder="Введите номер кредитной карты" required>
+      </div>
+      <div class="some-form__line">
+        <input type="tel" placeholder="Введите номер телефона" pattern="[7-9]{1}[0-9]{9}" 
+        title="Phone number with 7-9 and remaing 9 digit with 0-9"required>
+      </div>
+      <div class="some-form__line">
+        <input type="email" name="contact_f" id="contact_f" placeholder="E-mail" autocomplete="on" class="in_pl notvalid"required>
+      </div>
+  <div class="submit">
+      <div class="some-form__submit">
+        <input type="submit" value="Отправить" class="button button_submit button_wide"required>
+      </div>
+      <div class="some-form__reset">
+        <input type="reset" value="Очистить" class="button button_submit button_wide"required>
+      </div>
+  </div>
+    </form>
+  </div>
+ 
+</form>
+</body>
+</html>

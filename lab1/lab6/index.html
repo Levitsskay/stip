@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../lab5/css/style.css">
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav>
+        <ul class="topmenu">
+          <li><a href="../lab1/frame.html" class="active">Лабораторная№1<span class="fa fa-angle-down"></span></a>
+            <ul class="submenu">
+              <li><a href="">меню второго уровня</a></li>
+              <li><a href="">меню второго уровня<span class="fa fa-angle-down"></span></a></li>
+              <li><a href="">меню второго уровня</a></li>
+            </ul>
+          </li>
+          <li><a href="../lab2/lab2.html">Лабораторная№2</a></li>
+          <li><a href="../lab3/lab3.html">Лабораторная№3</a></li>
+          <li><a href="../lab4/lab4.html">Лабораторная№4</a></li>
+          <li><a href="" class="active">Лабораторная№5<span class="fa fa-angle-down"></span></a>
+          <ul class="submenu">
+            <li><a href="../lab5/anim.html">Анимация<span class="fa fa-angle-down"></span></a></li>
+            <li><a href="../lab5/form.html">Форма</a></li>
+            <li><a href="../lab5/lab5.html">Диалоговое окно</a></li>
+          </ul>
+          <li><a href="">Лабораторная№6</a></li>
+        </ul>
+      </nav>
+      <div class="train" id="train">
+          <b>HTML5</b>
+      </div>
+      <style>
+         #train {
+          position: relative;
+          cursor: pointer;
+          
+        }
+        .train{
+          margin: 40px 500px 200px 600px;
+          background-color:orange;
+          height: 100px;
+          width: 100px;
+          text-align: center;
+          padding: 30px;
+        }
+      </style>
+      
+      <script>
+    
+       $("#train").click(function(){
+            $("#train").animate({ height:"200",width:"200"}, "slow" );
+            $("#train").animate({ top:"400",right:"400"}, "slow" );
+            $("#train").animate({opacity:"0"},"slow"  );
+            $("#train").animate({opacity:"100"},"slow"  );
+            $("#train").animate({ bottom:"400",left:"400"}, "slow" );
+            $("#train").animate({opacity:"0"},"slow"  );    
+         });
+      
+         
+      
+      </script>
+      
+</body>
+</html>
